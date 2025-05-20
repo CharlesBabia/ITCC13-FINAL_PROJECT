@@ -8,6 +8,7 @@ body{
     font-family: "Tagesschrift", system-ui;
     background-image: url(img/background.png);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     
@@ -67,8 +68,20 @@ body{
         justify-content: center;
         gap: 40px;
         overflow:hidden;
+
     }
 
+   
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    height: 50%;
 }
 
 .hero-content__1__pic img{
@@ -81,13 +94,36 @@ h1{
     color: #1e092d;
 }
 
+h3{
+    color: #1e092d;
+}
+
 .footer{
     height: 5%;
     display: flex;
     align-items: center;
-    background-color: black;
-    margin-bottom: 0px;
+    gap: 40px;
+    padding: 10px;
 
+    &__text{
+        margin-left: 450px;
+    }
+}
+
+.footer img{
+    height: 8.7vh;
+    width: 4.7vw;
+    border: none;
+}
+
+#linkedin{
+    border: 4px solid black;
+}
+
+
+.logos{
+    display: flex;
+    gap: 10px;
 }
 
 ul{
@@ -139,6 +175,9 @@ img{
     margin: 0;
     opacity: 0;
     color: #1e092d;
+    background: rgba(128, 128, 128, 0.75);
+    border-radius: 34px;
+    padding: 3px;
 }
 
 .panel p{
@@ -150,6 +189,8 @@ img{
     opacity: 0;
     color: black;
     background: rgba(128, 128, 128, 0.75);
+    border-radius: 34px;
+    padding: 10px;
 }
 
 .panel.active{
@@ -182,6 +223,11 @@ img{
     background: rgba(128, 128, 128, 0.75);
     padding: 10px;
     border-radius: 24px;
+}
+
+.view:hover{
+    background: #1e092d;
+    color: white;
 }
 
 @media (max-width: 480px){
